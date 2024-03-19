@@ -1,8 +1,8 @@
 import express, { Router } from 'express'
 import swaggerUi from 'swagger-ui-express'
-import swaggerDocument from '../docs/swagger.json'
-import catchAsyncErrors from '../utils/catchAsyncErrors'
-import { getAllBooks, getUniqueBook, purchaseBook } from '../controller/booksController'
+import swaggerDocument from '../src/docs/swagger.json'
+import catchAsyncErrors from '../src/utils/catchAsyncErrors'
+import { getAllBooks, getUniqueBook, purchaseBook } from '../src/controller/booksController'
 import serverless from "serverless-http"
 
 const api = express()
